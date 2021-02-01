@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+/* Header starts */
+
+header{
+    color: #fff;
+}
+
+/* Navigation starts */
+
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    z-index: 1;
+    
+}
+
+.brand span{
+    color: #dbdbdb;
+    margin-left: .4rem;
+    font-size: 1.6rem;
+}
+
+.burger p{
+    display: inline;
+}
+
+.burger{
+    cursor: pointer;
+    font-size: 2.4rem;
+}
+
+.side-menu{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    left: 4rem;
+    top: 9rem;
+    list-style: none;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 1;
+}
+
+ul li{
+    cursor: pointer;
+    transition: color 0.6s;
+}
+
+ul li:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.burger{
+    color: #fff;
+}
+
+/* Navigation ends */
+
+/* Carousel */
+
+.my-container{
+    padding: 0;
+}
+
+.carousel .item{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.carousel .item1{
+    background-image: url(../images/slide01.jpg);
+    
+}
+.carousel .item2{
+    background-image: url(../images/slide02.jpg);
+    
+}
+.carousel .item3{
+    background-image: url(../images/slide03.jpg);
+   
+}
+.carousel .item4{
+    background-image: url(../images/slide04.jpg);
+    
+}
+.carousel .item5{
+    background-image: url(../images/slide05.jpg);
+    
+}
+
+/* Carousel ends */
+
+/* Banner starts */
+
+.banner{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner span{
+    color: #fff;
+}
+
+.banner p{
+    color: #dbdbdb;
+    letter-spacing: 0.4rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.banner h1{
+    font-size: 6.8rem;
+    
+}
+
+.banner hr{
+    width: 55%;
+    margin: 3rem auto;
+}
+
+/* Banner ends */
+
+/* Two images section starts */
+
+.two-images-section{
+    padding: 8rem 0;
+    background-color: #f2f2f2;
+}
+
+.card{
+    background: #fff;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-content-box{
+    padding: 3.8rem 4.6rem;
+}
+
+.card h6, .wrapper-image-section h6, .image-gallery-section h6{
+    line-height: 2rem;
+    color: gray;
+    letter-spacing: 0.4rem;
+}
+
+.card hr{
+    margin: 0 auto;
+    width: 55%;
+}
+
+.card h2{
+    margin: 10px 0;
+}
+
+.card p{
+    color: gray;
+    text-align: left;
+    margin: 3rem 0;
+}
+
+.card button{
+    border: 2px solid #d9d9d9;
+    background: none;
+    padding: .8rem 2.4rem;
+    font-weight: lighter;
+}
+
+/* Two images section ends */
+
+.wrapper-image-section{
+    background-image: url(../images/bg.jpg);
+    background-attachment: fixed;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.wrapper-image-section hr{
+    margin: 1.4rem auto;
+    width: 45%;
+    border: 0;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.wrapper-image-section h2{
+    margin: 0;
+    color: #fff;
+}
+
+/* Image Gallery Section starts */
+
+.image-gallery-section{
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 8rem 0;
+}
+
+.image-gallery-section hr{
+    border: 0;
+    height: 1px;
+    background-color: #dbdbdb;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.image-gallery-section h2{
+    margin: 0.8rem 0 5rem;
+}
+
+.image-box{
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2.8rem;
+    
+}
+
+.image-box img{
+    width: 100%;
+}
+
+/* Image Gallery Section ends */
+
+/* Footer starts */
+
+footer{
+    background-color: black;
+    padding: 6rem 0;
+}
+
+.footer-content{
+    text-align: center;
+    color: #808080;
+}
+
+.social span{
+    padding: 2rem .8rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: color 0.6s;
+}
+
+.social span:hover{
+    color: #66bb08;
+}
+
+/* Footer ends */
+
+
+/* Media Queries */
+
+@media only screen and (max-width:990px){
+    html{
+        font-size: 9px;
+    }
+    
+    .banner hr{
+        width: 100%;
+    }
+
+    .banner p{
+        font-size: 1.2rem;
+    }
+
+    .side-menu{
+        left: 3rem;
+        width: 50%;
+    }
+
+    .two-images-section{
+        padding: 4rem 0;
+        
+    }
+
+    .card{
+        margin: 4rem 0;
+    }
+    
+}
